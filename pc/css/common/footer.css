@@ -1,0 +1,152 @@
+@font-face {
+  font-family: 'MyNewFont';
+  src: url("../../font/KaiGenGothicCN-Light_8dd551f.woff");
+}
+
+.footer {
+  width: 100%;
+  height: 360px;
+  background: url(http://okzrsonhm.bkt.clouddn.com/zhaixi2foot_bg.png) center 0/auto auto no-repeat;
+  position: relative;
+}
+
+.footer .footer_inner {
+  width: 1200px;
+  height: 100%;
+  padding-top: 60px;
+  padding-bottom: 120px;
+  margin: 0 auto;
+}
+
+.footer .footer_inner .footer_logo {
+  width: 280px;
+  height: 100%;
+  float: left;
+  padding-top: 27px;
+  padding-right: 80px;
+}
+
+.footer .footer_inner .footer_logo img {
+  width: 100%;
+}
+
+.footer .footer_inner .footer_zhaixi_info {
+  width: 640px;
+  height: 100%;
+  float: left;
+  border-left: 1px solid #666;
+  border-right: 1px solid #666;
+}
+
+.footer .footer_inner .about {
+  width: 100%;
+  height: 110px;
+}
+
+.footer .footer_inner .about .item {
+  width: 33.3333333%;
+  float: left;
+}
+
+.footer .footer_inner .about .item p {
+  line-height: 28px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer .footer_inner .about .item p a {
+  color: #999;
+}
+
+.footer .footer_inner .about .item p:first-child {
+  font-size: 16px;
+  color: #fff;
+}
+
+.footer .footer_inner .contact {
+  width: 100%;
+  height: 70px;
+  padding: 0 30px;
+}
+
+.footer .footer_inner .contact .contact_inner {
+  width: 100%;
+  height: 100%;
+  padding: 32px 49px 0;
+  border-top: 1px solid #666;
+}
+
+.footer .footer_inner .contact .contact_img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer .footer_inner .contact .contact_img img {
+  width: 100%;
+}
+
+.footer .footer_inner .footer_erweima {
+  width: 280px;
+  height: 100%;
+  float: left;
+}
+
+.footer .footer_inner .footer_erweima .des {
+  width: 160px;
+  height: 100%;
+  float: left;
+  padding-top: 30px;
+  padding-left: 66px;
+}
+
+.footer .footer_inner .footer_erweima .des p {
+  float: left;
+  display: block;
+  font-size: 16px;
+  color: #fff;
+  padding: 3px;
+}
+
+.footer .footer_inner .footer_erweima .des p br {
+  padding: 0;
+}
+
+.footer .footer_inner .footer_erweima .erweima {
+  width: 120px;
+  height: 100%;
+  padding-top: 25px;
+  float: left;
+}
+
+.footer .footer_inner .footer_erweima .erweima img {
+  width: 100%;
+}
+
+.footer .icp_info {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #111;
+}
+
+.footer .icp_info .icp_inner {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.footer .icp_info .icp_inner p {
+  width: 100%;
+  display: block;
+  line-height: 60px;
+  text-align: center;
+  font-size: 14px;
+  color: #444;
+}
+
+.footer .icp_info .icp_inner p a {
+  color: #444;
+  font-size: 14px;
+}

@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'MyNewFont';
+  src: url("../font/KaiGenGothicCN-Light_8dd551f.woff");
+}
+
+#dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5000;
+  display: none;
+}
+
+.activity_box {
+  min-width: 1280px;
+}
+
+.header {
+  width: 100%;
+}
+
+.header .banner {
+  width: 100%;
+  position: relative;
+}
+
+.header .banner img {
+  width: 100%;
+}
+
+.header .banner .banner_des {
+  width: 900px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -30px;
+  margin-left: -400px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 60px;
+  color: #fff;
+}
+
+@media screen and (min-width: 1600px) {
+  .header .banner .banner_des {
+    font-size: 48px;
+  }
+}
+
+.header .banner .banner_des p span {
+  font-family: MyNewFont;
+}
+
+.activity_list {
+  width: 100%;
+}
+
+.activity_list .activity_item {
+  width: 100%;
+}
+
+.activity_list .activity_item img {
+  width: 100%;
+}

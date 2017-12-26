@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>用户须知</title>
+	<link rel="stylesheet" href="./css/common/base.css">
+	<link rel="stylesheet" href="./css/common/navbar.css">
+	<link rel="stylesheet" href="./css/userInfo.css">
+</head>
+<script src="./js/common/rem.js"></script>
+<body>
+	<!-- 导航栏+banner -->
+	<div class="header_box">
+
+		<div class="nav_hide">
+			<div class="logo">
+				<a href="./index.html">
+					<img src="http://oe3sfsdmg.bkt.clouddn.com/zhaixim1logo.png" alt="">
+				</a>
+			</div>
+			<div class="nav_button">
+				<img src="http://oe3sfsdmg.bkt.clouddn.com/zhaixim1nav_btn.png" alt="">
+			</div>
+			<div class="nav_close">
+				<img src="http://oe3sfsdmg.bkt.clouddn.com/zhaixim1nav_close.png" alt="">
+			</div>
+		</div>
+
+		<div class="navbar">
+			<div class="nav_inner">
+				<ul class="list">
+					<li class="item active">
+						<a href="./index.html">首页</a>
+					</li>
+					<li class="item">
+						<a href="./zhaixi.html">宅系</a>
+					</li>
+					<li class="item">
+						<a href="./activity.html">社区</a>
+					</li>
+					<li class="item">
+						<a href="./about.html">关于</a>
+					</li>
+				</ul>
+			</div>
+			<div class="reservation">
+				<a href="./reservation.html">
+					预约
+				</a>
+			</div>
+		</div>
+
+		<div class="banner">
+			<div class="banner_des">
+				<p>USER <br> INFOMATION </p>
+				<div class="line"></div>
+				<span>用户须知</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- 主体 -->
+	<div class="content_box">
+		<div class="rules">
+			<div class="rules_inner">
+				<div class="rule">
+					<p class="question">
+						<span class="en">WHO</span>
+						<span class="ch">是我们的首要服务群体？</span>
+					</p>
+					<p class="answer">答：认真生活的90后达人。</p>
+				</div>
+				<div class="rule">
+					<p class="question">
+						<span class="en">WHAT</span>
+						<span class="ch">是我们的核心承诺主张？</span>
+					</p>
+					<p class="answer">答：让居住陪伴你成长，让兴趣创造价值。</p>
+				</div>
+				<div class="rule">
+					<p class="question">
+						<span class="en">WHY</span>
+						<span class="ch">让客户选择并且相信我们？</span>
+					</p>
+					<p class="answer title">一要求：</p>
+					<p class="answer">针对入住者在某方面有一定爱好，兴趣，特点。</p>
+					<p class="answer title">二永久：</p>
+					<p class="answer">永久不主动解约，永久不涨房租。</p>
+					<p class="answer title">三不租：</p>
+					<p class="answer">不租90前，不租带宠物，不租带儿童。</p>
+				</div>
+			</div>
+		</div>
+		<div class="process">
+			<div class="process_inner">
+				<p class="title">入住流程</p>
+				<div class="process_box">
+					<img src="http://oe3sfsdmg.bkt.clouddn.com/zhaixim1process.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="button_box">
+			<div id="button">关闭</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+	<script src="./js/common/navbar.js"></script>
+	<script>
+		function closeHandle() {
+			location.href = "index.html";
+		};
+		$('#button').on('click', closeHandle);
+	</script>
+
+	<script src="https://wx.iwoyou.top/javascripts/mqjsapi.js"></script>
+	<script>
+		WX_SHARE({
+		  title: '用户须知-宅系公寓',  // 分享标题
+		  desc: '让兴趣宅出价值',   // 分享描述
+		  link: location.href,   // 分享链接
+		  imgUrl: 'http://okzrsonhm.bkt.clouddn.com/zhaixim1wxlogo.jpg', // 分享图标
+		});
+	</script>
+</body>
+</html>

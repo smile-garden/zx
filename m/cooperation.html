@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>商务合作—宅系公寓</title>
+	<link rel="stylesheet" href="./css/common/base.css">
+	<link rel="stylesheet" href="./css/common/navbar.css">
+	<link rel="stylesheet" href="./css/cooperation.css">
+</head>
+<script src="./js/common/rem.js"></script>
+<body>
+	<!-- 导航栏+banner -->
+	<div class="header_box">
+
+		<div class="nav_hide">
+			<div class="logo">
+				<a href="./index.html">
+					<img src="http://oe3sfsdmg.bkt.clouddn.com/zhaixim1logo.png" alt="">
+				</a>
+			</div>
+			<div class="nav_button">
+				<img src="http://oe3sfsdmg.bkt.clouddn.com/zhaixim1nav_btn.png" alt="">
+			</div>
+			<div class="nav_close">
+				<img src="http://oe3sfsdmg.bkt.clouddn.com/zhaixim1nav_close.png" alt="">
+			</div>
+		</div>
+
+		<div class="navbar">
+			<div class="nav_inner">
+				<ul class="list">
+					<li class="item active">
+						<a href="./index.html">首页</a>
+					</li>
+					<li class="item">
+						<a href="./zhaixi.html">宅系</a>
+					</li>
+					<li class="item">
+						<a href="./activity.html">社区</a>
+					</li>
+					<li class="item">
+						<a href="./about.html">关于</a>
+					</li>
+				</ul>
+			</div>
+			<div class="reservation">
+				<a href="./reservation.html">
+					预约
+				</a>
+			</div>
+		</div>
+
+		<div class="banner">
+			<div class="banner_des">
+				<p>BUSINESS <br> COOPERATION </p>
+				<div class="line"></div>
+				<span>商务合作</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- 主体 -->
+	<div class="info_box">
+		<div class="info_inner">
+			<div class="input_item">
+				<p>姓名</p>
+				<div class="wrapper"><input type="text" id="name_business" placeholder= "请输入您的姓名"></div>
+			</div>
+			<div class="input_item">
+				<p>手机号码</p>
+				<div class="wrapper"><input type="tel" id="phone_business" placeholder= "请输入您的手机号码"></div>
+			</div>
+		
+		<!-- 	<div class="input_item">
+			<p>邮箱</p>
+			<div class="wrapper"><input type="email" id="email" placeholder= "请输入您的常用邮箱"></div>
+		</div> -->
+			<div class="input_item">
+				<p>城市</p>
+				<div class="wrapper"><input type="text" id="city" placeholder= "杭州" value="杭州" disabled="disabled"></div>
+			</div>
+<!-- 
+			<div class="input_item">
+				<p>物业面积</p>
+				<div class="wrapper"><input type="text" id="area" placeholder= "请输入物业面积"></div>
+			</div>
+			<div class="input_item">
+				<p>物业地址</p>
+				<div class="wrapper"><input type="text" id="address" placeholder= "请输入物业地址"></div>
+			</div>
+		
+			<div class="textarea_box">
+				<p>合作内容</p>
+				<div class="wrapper"><textarea name="content" id="content_business" cols="30" rows="3" placeholder="请输入合作内容"></textarea></div>
+			</div> -->
+
+			<div class="input_item">
+				<p>您是如何知道宅系的</p>
+				<div class="wrapper select_wrapper">
+					<select name="path" id="path">
+						<option value="请输入您的途径">请选择您知道的途径</option>
+						<option value="朋友推荐">朋友推荐</option>
+						<option value="网络获取">网络获取</option>
+					</select>
+					<div class="right"><img src="http://okzrsonhm.bkt.clouddn.com/zhaixi2right.png" alt=""></div>
+				</div>
+			</div>
+
+			<div class="row_box">
+				<div class="note">
+					2个工作日会有内专属人员与您联系 <br> 请保持手机畅通哦
+				</div>
+				<div class="button_box">
+					<div class="button button_submit" id="btn_business">提交</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+	<script src="./js/common/navbar.js"></script>
+	<script>
+	    function submitHandle(){
+	    	var name_business = $('#name_business').val();
+	    	var phone_business = $('#phone_business').val();
+	    	// var email = $('#email').val();
+	    	var city = $('#city').val();
+	    /*	var area = $('#area').val();
+	    	var address = $('#address').val();
+	    	var content_business = $('#content_business').val();
+*/	    	var path = $('#path').val();
+
+	    	if (!name_business) {
+	    		return alert('请输入您的姓名');
+	    	};
+	    	if (!/^1(3|4|5|7|8)\d{9}$/.test(phone_business)) {
+	    		return alert('请输入正确的手机号码');
+	    	};
+	    /*	if (!/^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/.test(email)) {
+	    		return alert('请输入正确的邮箱');
+	    	};*/
+	    	if (!city) {
+	    		return alert('请输入你所在的城市');
+	    	};
+	    /*	if (!area) {
+	    		return alert('请输入物业面积');
+	    	};
+	    	if (!address) {
+	    		return alert('请输入物业地址');
+	    	};
+	    	if (!content_business) {
+	    		return alert('请输入合作内容');
+	    	};*/
+	    	if (!path) {
+	    		return alert('请选择您知道宅系的路径')
+	    	};
+	    	$.ajax({
+				type: 'post',
+				url: 'https://api.iwoyou.top/zhaixi/pc/business',
+				data: {
+					name: name_business,
+				    phone: phone_business,
+				    city: city,
+				    way: path
+				},
+				dataType: 'json',
+				success: function(data) {
+					if (data.success) {
+						console.log('success');
+						location.href = 'index.html';
+					} else {
+						throw Error(data.errmsg);
+					}
+				}
+			})
+	    };
+
+
+	    $('#btn_business').on('click',submitHandle);
+	</script>
+
+	<script src="https://wx.iwoyou.top/javascripts/mqjsapi.js"></script>
+	<script>
+		WX_SHARE({
+		  title: '商务合作—宅系公寓',  // 分享标题
+		  desc: '让兴趣宅出价值',   // 分享描述
+		  link: location.href,   // 分享链接
+		  imgUrl: 'http://okzrsonhm.bkt.clouddn.com/zhaixim1wxlogo.jpg', // 分享图标
+		});
+	</script>
+
+</body>
+</html>

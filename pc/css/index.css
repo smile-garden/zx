@@ -1,0 +1,771 @@
+@font-face {
+  font-family: 'MyNewFont';
+  src: url("../font/KaiGenGothicCN-Light_8dd551f.woff");
+}
+
+html, body {
+  height: 100%;
+}
+
+#dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5000;
+  display: none;
+}
+
+.container_box {
+  min-width: 1280px;
+  overflow: hidden;
+}
+
+.nav_box {
+  min-width: 100%;
+  height: 80px;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav_box .nav_inner {
+  width: 1280px;
+  height: 100%;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.nav_box .nav_inner .logo {
+  width: 50px;
+  height: 100%;
+  padding-top: 15px;
+  float: left;
+}
+
+.nav_box .nav_inner .logo img {
+  width: 100%;
+}
+
+.nav_box .nav_inner .reservation {
+  height: 100%;
+  width: 100px;
+  float: right;
+  padding-top: 25px;
+}
+
+.nav_box .nav_inner .reservation a {
+  width: 100%;
+  height: 30px;
+  display: block;
+  line-height: 28px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+@media screen and (min-width: 1600px) {
+  .nav_box .nav_inner .reservation a {
+    font-size: 16px;
+  }
+}
+
+.nav_box .navbar {
+  float: right;
+  padding-top: 25px;
+}
+
+.nav_box .navbar li {
+  float: left;
+  width: 100px;
+  height: 30px;
+}
+
+.nav_box .navbar li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  letter-spacing: 2px;
+  line-height: 28px;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (min-width: 1600px) {
+  .nav_box .navbar li a {
+    font-size: 16px;
+  }
+}
+
+.nav_box .navbar li:last-child a {
+  border-right-width: 0;
+}
+
+.nav_box .navbar li.active a {
+  color: #fff;
+}
+
+#navigation2 {
+  display: none;
+  background-color: black;
+  height: 60px;
+}
+
+#navigation2 .nav_inner .logo {
+  width: 57px;
+  padding-top: 15px;
+}
+
+#navigation2 .nav_inner .reservation {
+  padding-top: 15px;
+}
+
+#navigation2 .navbar {
+  padding-top: 15px;
+}
+
+.header_bg {
+  width: 100%;
+  height: 134px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background: url(http://okzrsonhm.bkt.clouddn.com/zhaixi2header_bg.png) repeat-x left top;
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+  min-width: 1280px;
+}
+
+.header .banner {
+  width: 100%;
+  height: 100%;
+}
+
+.header .banner #swiper1 {
+  width: 100%;
+  height: 100%;
+}
+
+.header .banner #swiper1 .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.header .banner #swiper1 .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.header .banner #swiper1 .swiper-slide.start {
+  background: url(http://okzrsonhm.bkt.clouddn.com/zhaixi1banner3.png) center/cover no-repeat;
+}
+
+.header .banner #swiper1 .swiper-slide.slogan {
+  background: url(http://okzrsonhm.bkt.clouddn.com/zhaixi1banner2.png) center/cover no-repeat;
+}
+
+.header .banner #swiper1 .swiper-slide.life {
+  background: url(http://okzrsonhm.bkt.clouddn.com/zhaixi2banner_78.png) center/cover no-repeat;
+}
+
+.header .banner #swiper1.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 40px;
+}
+
+.header .banner #swiper1 .swiper-pagination-bullet {
+  width: 90px;
+  height: 3px;
+  border-radius: 0;
+  background: #fff;
+  opacity: .4;
+}
+
+@media screen and (min-width: 1600px) {
+  .header .banner #swiper1 .swiper-pagination-bullet {
+    width: 120px;
+    height: 4px;
+    margin: 0 8px;
+  }
+}
+
+.header .banner #swiper1 .swiper-pagination-bullet-active {
+  background: #fff;
+  opacity: 1;
+}
+
+.culture {
+  width: 100%;
+  height: 300px;
+}
+
+.culture .culture_inner {
+  width: 100%;
+  height: 100%;
+  padding: 70px 0;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1600px) {
+  .culture .culture_inner {
+    padding: 50px 0;
+  }
+}
+
+.culture .culture_inner .list {
+  width: 100%;
+  height: 100%;
+}
+
+.culture .culture_inner .item {
+  font-family: MyNewFont;
+  float: left;
+  width: 25%;
+  height: 160px;
+  border-right: 1px dotted #999;
+}
+
+@media screen and (min-width: 1600px) {
+  .culture .culture_inner .item {
+    height: 200px;
+  }
+}
+
+.culture .culture_inner .item .culture_info {
+  width: 160px;
+  height: 100%;
+  padding: 30px 0;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1600px) {
+  .culture .culture_inner .item .culture_info {
+    padding: 50px 0;
+  }
+}
+
+.culture .culture_inner .item .culture_info .word_1 {
+  width: 100%;
+  height: 48px;
+  font-size: 36px;
+  padding-left: 76px;
+  line-height: 48px;
+  color: #313131;
+  background-image: url(http://okzrsonhm.bkt.clouddn.com/zhaixi2culture1.png);
+  background-position: 16px 4px;
+  background-size: 36px;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1600px) {
+  .culture .culture_inner .item .culture_info .word_1 {
+    font-size: 40px;
+    background-size: 48px;
+    background-position: 0 0;
+  }
+}
+
+.culture .culture_inner .item .culture_info .word_2 {
+  width: 100%;
+  height: 48px;
+  font-size: 36px;
+  padding-left: 76px;
+  line-height: 48px;
+  color: #313131;
+  background-image: url(http://okzrsonhm.bkt.clouddn.com/zhaixi2culture2.png);
+  background-position: 16px 4px;
+  background-size: 36px;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1600px) {
+  .culture .culture_inner .item .culture_info .word_2 {
+    font-size: 40px;
+    background-size: 48px;
+    background-position: 0 0;
+  }
+}
+
+.culture .culture_inner .item .culture_info .word_3 {
+  width: 100%;
+  height: 48px;
+  font-size: 36px;
+  padding-left: 76px;
+  line-height: 48px;
+  color: #313131;
+  background-image: url(http://okzrsonhm.bkt.clouddn.com/zhaixi2culture3.png);
+  background-position: 16px 4px;
+  background-size: 36px;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1600px) {
+  .culture .culture_inner .item .culture_info .word_3 {
+    font-size: 40px;
+    background-size: 48px;
+    background-position: 0 0;
+  }
+}
+
+.culture .culture_inner .item .culture_info .word_4 {
+  width: 100%;
+  height: 48px;
+  font-size: 36px;
+  padding-left: 76px;
+  line-height: 48px;
+  color: #313131;
+  background-image: url(http://okzrsonhm.bkt.clouddn.com/zhaixi2culture4.png);
+  background-position: 16px 4px;
+  background-size: 36px;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1600px) {
+  .culture .culture_inner .item .culture_info .word_4 {
+    font-size: 40px;
+    background-size: 48px;
+    background-position: 0 0;
+  }
+}
+
+.culture .culture_inner .item .culture_info span {
+  display: block;
+  text-align: center;
+  color: #808080;
+  padding-top: 16px;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 1600px) {
+  .culture .culture_inner .item .culture_info span {
+    font-size: 16px;
+    padding-top: 20px;
+  }
+}
+
+.culture .culture_inner .item:last-child {
+  border-right-width: 0;
+}
+
+.show_apartment {
+  width: 100%;
+}
+
+.show_apartment .show_box {
+  width: 64.84375%;
+  float: left;
+}
+
+.show_apartment .show_box #swiper2 {
+  width: 100%;
+}
+
+.show_apartment .show_box #swiper2 .swiper-slide {
+  width: 100%;
+}
+
+.show_apartment .show_box #swiper2 .swiper-slide img {
+  width: 100%;
+}
+
+.show_apartment .show_box .swiper-wrapper {
+  width: 100%;
+}
+
+.show_apartment .show_box .swiper-button-prev {
+  background-image: none;
+  line-height: 44px;
+  left: 20px;
+}
+
+.show_apartment .show_box .swiper-button-next {
+  background-image: none;
+  line-height: 44px;
+  right: 28px;
+}
+
+.show_apartment .show_box .iconfont {
+  color: #fff;
+  font-size: 36px;
+}
+
+.show_apartment .show_select {
+  width: 35.15625%;
+  float: left;
+  background-image: url(http://okzrsonhm.bkt.clouddn.com/zhaixi2show_apart1.png);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: top right;
+  position: relative;
+  overflow: hidden;
+}
+
+.show_apartment .show_select .frosted-glass {
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -ms-filter: blur(5px);
+  -o-filter: blur(5px);
+  filter: blur(5px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=4, MakeShadow=false);
+}
+
+.show_apartment .show_select .shade {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.show_apartment .show_select .select_box {
+  width: 86%;
+  height: 72%;
+  position: absolute;
+  top: 15%;
+  left: 7%;
+}
+
+.show_apartment .show_select .select_box .title {
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+  line-height: 38px;
+}
+
+@media screen and (min-width: 1600px) {
+  .show_apartment .show_select .select_box .title {
+    font-size: 40px;
+  }
+}
+
+.show_apartment .show_select .select_box .title_ch {
+  font-family: MyNewFont;
+  font-size: 28px;
+  padding-top: 28px;
+  color: #eee;
+}
+
+@media screen and (min-width: 1600px) {
+  .show_apartment .show_select .select_box .title_ch {
+    font-size: 32px;
+    padding-top: 40px;
+  }
+}
+
+.show_apartment .show_select .select_box .show_bar {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.show_apartment .show_select .select_box .show_bar .slogan {
+  font-size: 14px;
+  text-align: center;
+  line-height: 24px;
+  padding-bottom: 40px;
+  color: #fff;
+}
+
+@media screen and (min-width: 1600px) {
+  .show_apartment .show_select .select_box .show_bar .slogan {
+    font-size: 16px;
+  }
+}
+
+.show_apartment .show_select .select_box .list {
+  width: 380px;
+  height: 64px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1600px) {
+  .show_apartment .show_select .select_box .list {
+    width: 470px;
+    height: 80px;
+  }
+}
+
+.show_apartment .show_select .select_box .list .item {
+  width: 120px;
+  height: 100%;
+  cursor: pointer;
+  float: left;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0);
+}
+
+@media screen and (min-width: 1600px) {
+  .show_apartment .show_select .select_box .list .item {
+    width: 150px;
+  }
+}
+
+.show_apartment .show_select .select_box .list .item img {
+  width: 100%;
+  height: auto;
+}
+
+.show_apartment .show_select .select_box .list .item.margin {
+  margin: 0 10px;
+}
+
+.show_apartment .show_select .select_box .list .item.show_item {
+  border: 3px solid #fff;
+}
+
+.learn_more {
+  width: 100%;
+  overflow: hidden;
+}
+
+.learn_more .more_left {
+  width: 64.84375%;
+  float: left;
+  position: relative;
+}
+
+.learn_more .more_left img {
+  width: 100%;
+}
+
+.learn_more .more_left .slogan_box {
+  width: 600px;
+  height: 220px;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -110px;
+  margin-left: -300px;
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and (min-width: 1600px) {
+  .learn_more .more_left .slogan_box {
+    height: 270px;
+    margin-top: -135px;
+  }
+}
+
+.learn_more .more_left .slogan_box .slogan_en {
+  font-size: 60px;
+  line-height: 80px;
+}
+
+@media screen and (min-width: 1600px) {
+  .learn_more .more_left .slogan_box .slogan_en {
+    font-size: 72px;
+    line-height: 120px;
+  }
+}
+
+.learn_more .more_left .slogan_box .slogan_ch {
+  font-family: MyNewFont;
+  font-size: 26px;
+  line-height: 50px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1600px) {
+  .learn_more .more_left .slogan_box .slogan_ch {
+    font-size: 32px;
+  }
+}
+
+.learn_more .more_left .slogan_box .more {
+  width: 130px;
+  height: 46px;
+  display: block;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 14px;
+  line-height: 46px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1600px) {
+  .learn_more .more_left .slogan_box .more {
+    width: 170px;
+    height: 58px;
+    line-height: 56px;
+    font-size: 16px;
+  }
+}
+
+.learn_more .more_left .slogan_box .more:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.learn_more .more_right {
+  width: 35.15625%;
+  float: left;
+}
+
+.learn_more .more_right > div {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  z-index: 10;
+}
+
+.learn_more .more_right .notice .note_box {
+  width: 240px;
+  height: 160px;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  margin-top: -80px;
+}
+
+@media screen and (min-width: 1600px) {
+  .learn_more .more_right .notice .note_box {
+    height: 200px;
+    margin-top: -100px;
+  }
+}
+
+.learn_more .more_right .notice .note_box .note_slogan {
+  font-family: MyNewFont;
+  font-size: 28px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1600px) {
+  .learn_more .more_right .notice .note_box .note_slogan {
+    font-size: 32px;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+}
+
+.learn_more .more_right .notice .note_box .note_more {
+  width: 130px;
+  height: 46px;
+  font-size: 14px;
+  line-height: 44px;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #333;
+  color: #000;
+}
+
+@media screen and (min-width: 1600px) {
+  .learn_more .more_right .notice .note_box .note_more {
+    width: 170px;
+    height: 58px;
+    line-height: 56px;
+    font-size: 16px;
+  }
+}
+
+.learn_more .more_right .notice .note_box .note_more:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.learn_more .more_right .business .bus_box {
+  width: 200px;
+  height: 220px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -110px;
+  margin-left: -100px;
+  padding-top: 24px;
+}
+
+@media screen and (min-width: 1600px) {
+  .learn_more .more_right .business .bus_box {
+    padding-top: 0;
+  }
+}
+
+.learn_more .more_right .business .bus_box .bus_en {
+  font-size: 30px;
+  text-align: center;
+  line-height: 36px;
+}
+
+@media screen and (min-width: 1600px) {
+  .learn_more .more_right .business .bus_box .bus_en {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+
+.learn_more .more_right .business .bus_box .line {
+  width: 30px;
+  height: 60px;
+  padding: 24px 0 32px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1600px) {
+  .learn_more .more_right .business .bus_box .line {
+    width: 40px;
+    height: 74px;
+    padding: 30px 0 40px;
+  }
+}
+
+.learn_more .more_right .business .bus_box .line span {
+  width: 100%;
+  height: 3px;
+  display: block;
+  border-radius: 2px;
+  background-color: #fdc30f;
+}
+
+@media screen and (min-width: 1600px) {
+  .learn_more .more_right .business .bus_box .line span {
+    height: 4px;
+  }
+}
+
+.learn_more .more_right .business .bus_box .bus_affairs {
+  width: 130px;
+  height: 46px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  line-height: 44px;
+  border: 1px solid #fff;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1600px) {
+  .learn_more .more_right .business .bus_box .bus_affairs {
+    width: 170px;
+    height: 58px;
+    font-size: 16px;
+    line-height: 56px;
+  }
+}
+
+.learn_more .more_right .business .bus_box .bus_affairs:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.learn_more .more_right img {
+  width: 100%;
+}

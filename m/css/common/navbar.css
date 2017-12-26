@@ -1,0 +1,126 @@
+@charset "UTF-8";
+.header_box {
+  width: 100%;
+  position: relative;
+}
+
+.header_box .nav_hide {
+  width: 100%;
+  height: .5rem;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+
+.header_box .nav_hide .logo {
+  width: .8rem;
+  height: 100%;
+  padding: .145rem .2rem;
+  float: left;
+}
+
+.header_box .nav_hide .logo img {
+  width: 100%;
+}
+
+.header_box .nav_hide .nav_button {
+  width: .5rem;
+  height: 100%;
+  padding: .1975rem .17rem;
+  float: right;
+  background: #000;
+}
+
+.header_box .nav_hide .nav_button img {
+  width: 100%;
+}
+
+.header_box .nav_hide .nav_close {
+  width: .5rem;
+  height: 100%;
+  padding: .19rem;
+  display: none;
+  float: right;
+  background: #000;
+}
+
+.header_box .nav_hide .nav_close img {
+  width: 100%;
+}
+
+.header_box .navbar {
+  width: 100%;
+  height: .4rem;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: .5rem;
+  left: -100%;
+  z-index: 900;
+  transition: left .8s;
+  -moz-transition: left .8s;
+  /* Firefox 4 */
+  -webkit-transition: left .8s;
+  /* Safari 和 Chrome */
+  -o-transition: left .8s;
+  /* Opera */
+}
+
+.header_box .navbar.nav_show {
+  left: 0;
+}
+
+.header_box .navbar .nav_inner {
+  width: 3.25rem;
+  height: 100%;
+  padding: .10rem 0;
+  float: left;
+}
+
+.header_box .navbar .nav_inner .list {
+  width: 100%;
+  height: 100%;
+}
+
+.header_box .navbar .nav_inner .list .item {
+  width: 25%;
+  height: 100%;
+  float: left;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header_box .navbar .nav_inner .list .item:last-child {
+  border-right-width: 0;
+}
+
+.header_box .navbar .nav_inner .list .item.active a {
+  color: #fff;
+}
+
+.header_box .navbar .nav_inner .list a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #999;
+  font-size: .14rem;
+  text-align: center;
+  line-height: .2rem;
+}
+
+.header_box .navbar .reservation {
+  width: .5rem;
+  height: 100%;
+  float: left;
+}
+
+.header_box .navbar .reservation a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+  line-height: .4rem;
+  text-align: center;
+  font-size: .14rem;
+  color: #fff;
+}

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户须知—宅系公寓</title>
+	<link rel="stylesheet" href="./css/common/base.css">
+	<link rel="stylesheet" href="./css/userInfo.css">
+</head>
+<body>
+	<div class="userInfo_box">
+		<div class="userInfo_inner">
+			<div class="banner_box">
+				<p>USER <br> INFOMATION </p>
+				<div class="line"></div>
+				<span>用户须知</span>
+			</div>
+			<div class="content_box">
+				<div class="rules">
+					<div class="rules_inner">
+						<div class="rules_left">
+							<div class="rule">
+								<p class="question">
+									<span class="en">WHO</span>
+									<span class="ch">是我们的首要服务群体？</span>
+								</p>
+								<p class="answer">答：认真生活的90后达人。</p>
+							</div>
+							<div class="rule">
+								<p class="question">
+									<span class="en">WHAT</span>
+									<span class="ch">是我们的核心承诺主张？</span>
+								</p>
+								<p class="answer">答：让居住陪伴你成长，让兴趣创造价值。</p>
+							</div>
+						</div>
+						<div class="rules_right">
+							<div class="rule">
+								<p class="question">
+									<span class="en">WHY</span>
+									<span class="ch">让客户选择并且相信我们？</span>
+								</p>
+								<p class="answer"><span>一要求：</span>针对入住者在某方面有一定爱好，兴趣，特点。</p>
+								<p class="answer"><span>二永久：</span>永久不主动解约，永久不涨房租。</p>
+								<p class="answer"><span>三不租：</span>不租90前，不租带宠物，不租带儿童。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="process">
+					<div class="process_inner">
+						<div class="title">入住流程</div>
+						<ul class="process_list">
+							<li class="item_box">
+								<div class="item">网上预约</div>
+								<div class="arrow">
+									<img src="http://okzrsonhm.bkt.clouddn.com/zhaixi2process_arrow.png" alt="">
+								</div>
+							</li>
+							<li class="item_box">
+								<div class="item">预约看房</div>
+								<div class="arrow">
+									<img src="http://okzrsonhm.bkt.clouddn.com/zhaixi2process_arrow.png" alt="">
+								</div>
+							</li>
+							<li class="item_box">
+								<div class="item">客户回访</div>
+								<div class="arrow">
+									<img src="http://okzrsonhm.bkt.clouddn.com/zhaixi2process_arrow.png" alt="">
+								</div>
+							</li>
+							<li class="item_box">
+								<div class="item">线上签约</div>
+								<div class="arrow">
+									<img src="http://okzrsonhm.bkt.clouddn.com/zhaixi2process_arrow.png" alt="">
+								</div>
+							</li>
+							<li class="item_box">
+								<div class="item">入住宅系</div>
+							</li>
+						</ul>
+						<div class="close" id="userInfo_close">关闭</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.bootcss.com/jquery/1.12.1/jquery.min.js"></script>
+	<script>
+		function closeUserInfo() {
+			var dialog = $(window.top.document).find('#dialog');
+			var bodyScroll = $(window.top.document).find('body');
+			dialog.hide();
+			bodyScroll.css('overflow','auto');
+		}
+		$('#userInfo_close').on('click',closeUserInfo);
+	</script>
+</body>
+</html>

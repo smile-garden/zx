@@ -1,0 +1,292 @@
+@font-face {
+  font-family: 'MyNewFont';
+  src: url("../font/KaiGenGothicCN-Light_8dd551f.woff");
+}
+
+.header_box .banner {
+  width: 100%;
+  height: 3.6rem;
+  background: url(http://oe3sfsdmg.bkt.clouddn.com/zhaixim1zx_banner1.png) center center/cover no-repeat;
+  margin-bottom: .03rem;
+}
+
+.header_box .banner .banner_des {
+  padding-top: 1.7rem;
+  font-size: .2rem;
+  line-height: .26rem;
+  text-align: center;
+  color: #fff;
+}
+
+.header_box .banner .banner_des p {
+  font-family: MyNewFont;
+  letter-spacing: 1px;
+}
+
+.header_box .banner .banner_des span {
+  font-family: Smartisan;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.content {
+  width: 100%;
+}
+
+.view {
+  width: 100%;
+  height: 1.8rem;
+  background: url(http://oe3sfsdmg.bkt.clouddn.com/zhaixim1zx_banner2.png) center center/cover no-repeat;
+  margin-bottom: .03rem;
+  padding: .65rem 0;
+}
+
+.view.view_2 {
+  background: url(http://oe3sfsdmg.bkt.clouddn.com/zhaixim1zx_banner3.png) center center/cover no-repeat;
+}
+
+.view .view_des {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+.view .view_des .title {
+  font-size: .2rem;
+  line-height: .3rem;
+  font-family: MyNewFont;
+}
+
+.view .view_des .title span {
+  font-weight: 700;
+}
+
+.view .view_des .title .fine {
+  font-weight: 100;
+}
+
+.view .view_des .des {
+  line-height: .2rem;
+  font-size: .1rem;
+}
+
+.slogan_box {
+  width: 100%;
+  height: 3.6rem;
+  padding-top: .9rem;
+  background: url(http://oe3sfsdmg.bkt.clouddn.com/zhaixim1zx_banner4.png) center center/cover no-repeat;
+}
+
+.slogan_box .logo {
+  width: .5rem;
+  height: .5rem;
+  margin: 0 auto .15rem;
+}
+
+.slogan_box .logo img {
+  width: 100%;
+}
+
+.slogan_box .title {
+  font-size: .2rem;
+  line-height: .3rem;
+  color: #fff;
+  text-align: center;
+  font-family: MyNewFont;
+}
+
+.slogan_box .title span {
+  font-weight: 700;
+}
+
+.service_box {
+  width: 100%;
+  height: 3.6rem;
+  background: #fff;
+  padding: .45rem .225rem;
+}
+
+.service_box .service_inner {
+  width: 100%;
+  height: 100%;
+}
+
+.service_box .service_inner .title {
+  font-size: .2rem;
+  line-height: .3rem;
+  color: #000;
+  text-align: center;
+  font-family: MyNewFont;
+}
+
+.service_box .service_inner .title span {
+  font-weight: 700;
+}
+
+.service_box .service {
+  width: 3.3rem;
+  height: 2.4rem;
+  margin: 0 auto;
+  padding-top: .2rem;
+}
+
+.service_box .service .list {
+  width: 100%;
+  height: 100%;
+}
+
+.service_box .service .item {
+  width: 1.1rem;
+  height: 1.1rem;
+  float: left;
+}
+
+.service_box .service .item .img_box {
+  width: .5rem;
+  height: .5rem;
+  margin: .28rem auto .2rem;
+  background-image: url(http://oe3sfsdmg.bkt.clouddn.com/zhaixim1icon_box.png);
+  background-repeat: no-repeat;
+  background-size: 1rem auto;
+}
+
+.service_box .service .item span {
+  display: block;
+  font-size: .1rem;
+  line-height: .12rem;
+  color: #959595;
+  text-align: center;
+}
+
+.service_box .service .item:nth-of-type(1) .img_box {
+  background-position: 0 0rem;
+}
+
+.service_box .service .item:nth-of-type(2) .img_box {
+  background-position: 0 -0.5rem;
+}
+
+.service_box .service .item:nth-of-type(3) .img_box {
+  background-position: 0 -1rem;
+}
+
+.service_box .service .item:nth-of-type(4) .img_box {
+  background-position: 0 -1.5rem;
+}
+
+.service_box .service .item:nth-of-type(5) .img_box {
+  background-position: 0 -2rem;
+}
+
+.service_box .service .item:nth-of-type(6) .img_box {
+  background-position: 0 -2.5rem;
+}
+
+.facility_box {
+  width: 100%;
+  height: 3.6rem;
+  background: url(http://oe3sfsdmg.bkt.clouddn.com/zhaixim1zx_banner5.png) center center/cover no-repeat;
+  padding: .45rem .225rem;
+}
+
+.facility_box .facility_inner {
+  width: 100%;
+  height: 100%;
+}
+
+.facility_box .facility_inner .title {
+  font-size: .2rem;
+  line-height: .3rem;
+  color: #fff;
+  text-align: center;
+  font-family: MyNewFont;
+}
+
+.facility_box .facility_inner .title span {
+  font-weight: 700;
+}
+
+.facility_box .facility {
+  width: 3.3rem;
+  height: 2.4rem;
+  margin: 0 auto;
+  padding-top: .2rem;
+}
+
+.facility_box .facility .list {
+  width: 100%;
+  height: 100%;
+}
+
+.facility_box .facility .item {
+  width: 1.1rem;
+  height: 1.1rem;
+  float: left;
+}
+
+.facility_box .facility .item .img_box {
+  width: .5rem;
+  height: .5rem;
+  margin: .28rem auto .2rem;
+  background-image: url(http://oe3sfsdmg.bkt.clouddn.com/zhaixim1icon_box.png);
+  background-repeat: no-repeat;
+  background-size: 1rem auto;
+}
+
+.facility_box .facility .item span {
+  display: block;
+  font-size: .1rem;
+  line-height: .12rem;
+  color: #999;
+  text-align: center;
+}
+
+.facility_box .facility .item.margin_left {
+  margin-left: .55rem;
+}
+
+.facility_box .facility .item:nth-of-type(1) .img_box {
+  background-position: -0.5rem 0rem;
+}
+
+.facility_box .facility .item:nth-of-type(2) .img_box {
+  background-position: -0.5rem -0.5rem;
+}
+
+.facility_box .facility .item:nth-of-type(3) .img_box {
+  background-position: -0.5rem -1rem;
+}
+
+.facility_box .facility .item:nth-of-type(4) .img_box {
+  background-position: -0.5rem -1.5rem;
+}
+
+.facility_box .facility .item:nth-of-type(5) .img_box {
+  background-position: -0.5rem -2rem;
+}
+
+.footer {
+  width: 100%;
+  height: .5rem;
+  background: url(http://oe3sfsdmg.bkt.clouddn.com/zhaixim1footer_bg.png) center center/cover no-repeat;
+  padding: .12rem 0;
+}
+
+.footer .footer_inner {
+  width: 100%;
+  height: 100%;
+}
+
+.footer .footer_inner p {
+  width: 100%;
+  height: .13rem;
+  font-size: .1rem;
+  color: #666;
+  text-align: center;
+  line-height: .15rem;
+}
+
+.footer .footer_inner p a {
+  color: #666;
+}

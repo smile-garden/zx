@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'MyNewFont';
+  src: url("../font/KaiGenGothicCN-Light_8dd551f.woff");
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.userInfo_box {
+  min-width: 1080px;
+}
+
+.userInfo_inner {
+  width: 920px;
+  margin: 80px auto;
+  background-color: #fff;
+}
+
+.userInfo_inner .banner_box {
+  width: 100%;
+  height: 300px;
+  background: url(http://okzrsonhm.bkt.clouddn.com/zhaixi2user_info.png) 0 0/100% auto no-repeat;
+  color: #fff;
+  padding: 52px;
+}
+
+.userInfo_inner .banner_box p {
+  font-size: 32px;
+}
+
+.userInfo_inner .banner_box .line {
+  width: 16px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #FFDF60;
+  margin: 30px 0;
+}
+
+.userInfo_inner .banner_box span {
+  font-size: 24px;
+}
+
+.userInfo_inner .content_box {
+  padding: 0 60px;
+}
+
+.userInfo_inner .content_box .rules {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.userInfo_inner .content_box .rules .rules_inner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.userInfo_inner .content_box .rules .rules_inner .rules_left {
+  width: 450px;
+  float: left;
+}
+
+.userInfo_inner .content_box .rules .rules_inner .rules_right {
+  float: left;
+  width: 350px;
+}
+
+.userInfo_inner .content_box .rules .rule {
+  padding-bottom: 24px;
+}
+
+.userInfo_inner .content_box .rules .rule .question {
+  overflow: hidden;
+  padding-bottom: 24px;
+}
+
+.userInfo_inner .content_box .rules .rule .question span {
+  float: left;
+  color: #1b1b1b;
+  line-height: 32px;
+}
+
+.userInfo_inner .content_box .rules .rule .question .en {
+  font-size: 32px;
+  padding-right: 8px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.userInfo_inner .content_box .rules .rule .question .ch {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.userInfo_inner .content_box .rules .rule .answer {
+  font-size: 14px;
+  color: #959595;
+  line-height: 14px;
+  padding-bottom: 16px;
+}
+
+.userInfo_inner .content_box .rules .rule .answer span {
+  color: #1b1b1b;
+  font-weight: bolder;
+  font-family: MyNewFont;
+}
+
+.userInfo_inner .content_box .process {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.userInfo_inner .content_box .process .process_inner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.userInfo_inner .content_box .process .title {
+  padding-bottom: 40px;
+  color: #1b1b1b;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.userInfo_inner .content_box .process .process_list {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 60px;
+}
+
+.userInfo_inner .content_box .process .process_list .item_box {
+  float: left;
+}
+
+.userInfo_inner .content_box .process .process_list .item_box .item {
+  width: 120px;
+  height: 40px;
+  float: left;
+  font-size: 14px;
+  color: #1b1b1b;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  text-align: center;
+  line-height: 34px;
+  border: 3px solid #1b1b1b;
+  border-radius: 5px;
+}
+
+.userInfo_inner .content_box .process .process_list .item_box .arrow {
+  width: 50px;
+  height: 40px;
+  padding: 13px 19px;
+  float: left;
+}
+
+.userInfo_inner .content_box .process .process_list .item_box .arrow img {
+  width: 100%;
+}
+
+.userInfo_inner .content_box .process .close {
+  width: 120px;
+  height: 46px;
+  float: right;
+  color: #fff;
+  line-height: 46px;
+  font-size: 14px;
+  text-align: center;
+  background-color: #3A3939;
+  cursor: pointer;
+}

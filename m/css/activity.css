@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'MyNewFont';
+  src: url("../font/KaiGenGothicCN-Light_8dd551f.woff"); }
+
+.header_box .banner {
+  width: 100%;
+  height: 2.6rem;
+  background: url(http://oe3sfsdmg.bkt.clouddn.com/zhaixim1activity_banner.png) center center/cover no-repeat;
+  margin-bottom: .03rem; }
+  .header_box .banner .banner_des {
+    padding-top: 1.25rem;
+    font-size: .2rem;
+    line-height: .26rem;
+    text-align: center;
+    color: #fff; }
+    .header_box .banner .banner_des p {
+      font-family: MyNewFont;
+      letter-spacing: 1px; }
+    .header_box .banner .banner_des span {
+      font-family: Smartisan;
+      font-weight: 700;
+      letter-spacing: 1px; }
+
+.content {
+  width: 100%; }
+
+.activity_list {
+  width: 100%; }
+  .activity_list .activity_item {
+    width: 100%;
+    height: 4.68rem;
+    background: url(http://oe3sfsdmg.bkt.clouddn.com/zhaixim1activity_bg.png) center center/cover no-repeat;
+    position: relative; }
+    .activity_list .activity_item .end_box {
+      width: 1.065rem;
+      height: .845rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto; }
+      .activity_list .activity_item .end_box img {
+        width: 100%; }
+
+.footer {
+  width: 100%;
+  height: .5rem;
+  background: url(http://oe3sfsdmg.bkt.clouddn.com/zhaixim1footer_bg.png) center center/cover no-repeat;
+  padding: .12rem 0; }
+  .footer .footer_inner {
+    width: 100%;
+    height: 100%; }
+    .footer .footer_inner p {
+      width: 100%;
+      height: .13rem;
+      font-size: .1rem;
+      color: #666;
+      text-align: center;
+      line-height: .15rem; }
+      .footer .footer_inner p a {
+        color: #666; }

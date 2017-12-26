@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>预约入住</title>
+	<link rel="stylesheet" href="./css/common/base.css">
+	<link rel="stylesheet" href="./css/common/navbar.css">
+	<link rel="stylesheet" href="./css/reservation.css">
+</head>
+<script src="./js/common/rem.js"></script>
+<body>
+	<!-- 导航栏+banner -->
+	<div class="header_box">
+
+		<div class="nav_hide">
+			<div class="logo">
+				<a href="./index.html">
+					<img src="http://oe3sfsdmg.bkt.clouddn.com/zhaixim1logo.png" alt="">
+				</a>
+			</div>
+			<div class="nav_button">
+				<img src="http://oe3sfsdmg.bkt.clouddn.com/zhaixim1nav_btn.png" alt="">
+			</div>
+			<div class="nav_close">
+				<img src="http://oe3sfsdmg.bkt.clouddn.com/zhaixim1nav_close.png" alt="">
+			</div>
+		</div>
+
+		<div class="navbar">
+			<div class="nav_inner">
+				<ul class="list">
+					<li class="item active">
+						<a href="./index.html">首页</a>
+					</li>
+					<li class="item">
+						<a href="./zhaixi.html">宅系</a>
+					</li>
+					<li class="item">
+						<a href="./activity.html">社区</a>
+					</li>
+					<li class="item">
+						<a href="./about.html">关于</a>
+					</li>
+				</ul>
+			</div>
+			<div class="reservation">
+				<a href="javascript:;">
+					预约
+				</a>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- 主体 -->
+	<div class="step_box" >
+		<!-- 预约1 -->
+		<div class="step" id="step_info" style="display: block;">
+			<div class="step_inner">
+				<div class="input_item">
+					<p>手机号码</p>
+					<div class="wrapper"><input type="tel" id="phone" placeholder= "请输入您的手机号码"></div>
+				</div>
+				<div class="input_item vcode">
+					<p>验证码</p>
+					<div class="wrapper">
+						<input type="text" id="code" placeholder= "请输入验证码">
+						<div class="code_box" id="hq_code" onclick="resetCode(this)">获取验证码</div>
+						<div class="code_box" id="cx_code" style="display:none">60(s)</div>
+					</div>
+				</div>
+
+				<div class="row_box">
+					<div class="button_box">
+						<div class="button button_submit">下一步</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 预约2 -->
+		<div class="step" id="step_all_info">
+			<div class="step_inner">
+				<div class="input_item">
+					<p>分店</p>
+					<div class="wrapper select_wrapper">
+						<select name="home_shop" id="home_select">
+							<option value="宅系公寓">宅系公寓</option>
+							<!-- <option value="选择分店">选择分店</option>
+							<option value="窝友公寓">窝友公寓</option> -->
+						</select>
+						<div class="right"><img src="http://okzrsonhm.bkt.clouddn.com/zhaixi2right.png" alt=""></div>
+					</div>
+				</div>
+				<div class="input_item">
+					<p>姓名</p>
+					<div class="wrapper"><input type="text" id="name" placeholder= "请输入您的姓名"></div>
+				</div>
+				<div class="input_item">
+					<p>手机号码</p>
+					<div class="wrapper"><input type="tel" id="get_phone" placeholder= "获取手机号码" disabled="disabled"></div>
+				</div>
+				<div class="input_item">
+					<p>住房预算金额（每月/间）</p>
+					<div class="wrapper"><input type="text" id="money" placeholder= "请输入住房预算金额"></div>
+				</div>
+				<div class="input_item">
+					<p>预计入住时间</p>
+					<div class="wrapper"><input type="text" id="time" placeholder= "请输入您预计入住时间"></div>
+				</div>
+				<div class="input_item">
+					<p>喜欢玩什么</p>
+					<div class="wrapper"><input type="text" id="play" placeholder= "为您寻找志趣相投的发烧友"></div>
+				</div>
+				<div class="row_box">
+					<div class="button_box">
+						<div class="button button_close">上一步</div>
+						<div class="button button_submit">提交</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 预约3 -->
+		<div class="step" id="step_success">
+			<div class="step_inner">
+				<div class="success_box">
+					<div class="success">预约成功！</div>
+					<p>2个工作日内会有专属人员与您联系<br>请您保持手机畅通啊</p>
+					<div class="button button_close">关闭</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+	<script src="./js/common/navbar.js"></script>
+	<script>
+		function resetCode(){
+	      var hq_code = $('#hq_code');
+	      var cx_code = $('#cx_code');
+	      var phone = $('#phone').val();
+	      if (!/^1(3|4|5|7|8)\d{9}$/.test(phone)) return alert('请输入正确的手机号');
+	      cx_code.html('60(s)');
+	      hq_code.hide();
+	      cx_code.show();
+	      var second = 60;
+	      var timer = null;
+
+	      $.ajax({
+	        type: 'post',
+	        url: 'https://api.iwoyou.top/sms/send/',
+	        data: {
+	          phone: phone
+	        },
+	        dataType: 'json',
+	        success: function(data) {
+	          if (data.success) {
+	            console.log('success');
+	          } else {
+	            throw Error(data.errmsg);
+	          }
+	        }
+	      })
+
+	      timer = setInterval(function(){
+	        second -= 1;
+	        if(second >0 ){
+	          cx_code.html(+second+'(s)');
+	        }else{
+	          clearInterval(timer);
+	          hq_code.html('重新获取');
+	          hq_code.show();
+	          cx_code.hide();
+	        };
+	      },1000);
+	    }
+
+	    var step = $('.step_box .step');
+	    var step_info = $('#step_info');
+	    var step_all_info = $('#step_all_info');
+	    var step_success = $('#step_success');
+
+	    var submit_1 = $('#step_info .button_submit');
+	    var submit_2 = $('#step_all_info .button_submit');
+
+	    var close = $('.step .button_close');
+
+	    // 提交验证信息
+	    function infoSubmitHandle(){
+	    	var phone = $('#phone').val();
+	    	var code = $('#code').val();
+	    	if (!/^1(3|4|5|7|8)\d{9}$/.test(phone)) return alert('请输入正确的手机号');
+	    	if (!code) return alert('请输入验证码');
+
+			$.ajax({
+				type: 'post',
+				url: 'https://api.iwoyou.top/sms/verify',
+				data: {
+				  phone: phone,
+				  code: code
+				},
+				dataType: 'json',
+				success: function(data) {
+					if (data.success) {
+				    	step.hide().eq(1).show();
+				    	var get_phone = $('#get_phone');
+				    	get_phone.val(phone);
+					} else {
+						alert('验证码有误');
+						throw Error(data.errmsg);
+					}
+				}
+			})
+
+	    }
+	    // 提交补充材料
+	    function allinfoSubmitHandle(){
+	    	var shop = $('#home_select').val();
+	    	var name = $('#name').val();
+	    	var get_phone = $('#get_phone').val();
+	    	var money = $('#money').val();
+	    	var time = $('#time').val();
+	    	var play = $('#play').val();
+	    	if (!name) return alert('请输入您的姓名');
+	    	if (!money) return alert('请输入住房预算金额');
+	    	if (!time) return alert('请输入您预计入住时间');
+	    	if (!play) return alert('请输入您喜欢玩的');
+	    	$.ajax({
+				type: 'post',
+				url: 'https://api.iwoyou.top/zhaixi/pc/order',
+				data: {
+					shop: shop,
+					name: name,
+				    phone: get_phone,
+				    wish_price: money,
+				    checkin_time: time,
+				    interest: play
+				},
+				dataType: 'json',
+				success: function(data) {
+					if (data.success) {
+						console.log('提交成功');
+				    	step.hide().eq(2).show();
+					} else {
+						throw Error(data.errmsg);
+					}
+				}
+			})
+	    }
+	    // 关闭
+	    function closeHandle(){
+	    	var i = $(this).parents('.step').index();
+	    	if (i == 1) {
+	    		step.hide().eq(0).show();
+	    	};
+	    	if (i == 2) {
+	    		location.href = 'index.html';
+	    	};
+	    }
+
+	    submit_1.on('click',infoSubmitHandle);
+	    submit_2.on('click',allinfoSubmitHandle);
+	    close.on('click',closeHandle);
+	</script>
+	
+	<script src="https://wx.iwoyou.top/javascripts/mqjsapi.js"></script>
+	<script>
+		WX_SHARE({
+		  title: '预约入住-宅系公寓',  // 分享标题
+		  desc: '让兴趣宅出价值',   // 分享描述
+		  link: location.href,   // 分享链接
+		  imgUrl: 'http://okzrsonhm.bkt.clouddn.com/zhaixim1wxlogo.jpg', // 分享图标
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>预约入住—宅系公寓</title>
+	<link rel="stylesheet" href="./css/common/base.css">
+	<link rel="stylesheet" href="./css/reservation.css">
+</head>
+<body>
+	<div class="reservation_box" id="mask">
+		<div class="step_box">
+			<!-- 预约1 -->
+			<div class="step" id="step_info" style="display:block;">
+				<div class="step_inner">
+					<div class="wrapper">
+						<div class="logo_box">
+							<img src="http://okzrsonhm.bkt.clouddn.com/zhaixi2reservation_logo.png" alt="">
+						</div>
+						<div class="statu_box">
+							<img src="http://okzrsonhm.bkt.clouddn.com/zhaixi2step1.png" alt="">
+						</div>
+					</div>
+					<div class="info_box">
+						<div class="row_box">
+							<div class="input_item">
+								<p>手机号码</p>
+								<div class="wrapper"><input type="tel" id="phone" placeholder= "请输入您的手机号码"></div>
+							</div>
+							<div class="input_item vcode">
+								<p>验证码</p>
+								<div class="wrapper">
+									<input type="text" id="code" placeholder= "请输入验证码">
+									<div class="code_box" id="hq_code" onclick="resetCode(this)">获取验证码</div>
+									<div class="code_box" id="cx_code" style="display:none">60(s)</div>
+								</div>
+							</div>
+						</div>
+						<div class="row_box">
+							<div class="button_box">
+								<div class="button button_submit">提交</div>
+								<div class="button button_close">关闭</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 预约2 -->
+			<div class="step" id="step_all_info">
+				<div class="step_inner">
+					<div class="wrapper">
+						<div class="logo_box">
+							<img src="http://okzrsonhm.bkt.clouddn.com/zhaixi2reservation_logo.png" alt="">
+						</div>
+						<div class="statu_box">
+							<img src="http://okzrsonhm.bkt.clouddn.com/zhaixi2step2.png" alt="">
+						</div>
+					</div>
+					<div class="info_box">
+						<div class="row_box">
+							<div class="input_item">
+								<p>分店</p>
+								<div class="wrapper select_wrapper">
+									<select name="home_shop" id="home_select">
+										<option value="宅系公寓">宅系公寓</option>
+									</select>
+									<div class="right"><img src="http://okzrsonhm.bkt.clouddn.com/zhaixi2right.png" alt=""></div>
+								</div>
+							</div>
+							<div class="input_item">
+								<p>姓名</p>
+								<div class="wrapper"><input type="text" id="name" placeholder= "请输入您的姓名"></div>
+							</div>
+						</div>
+						<div class="row_box">
+							<div class="input_item">
+								<p>手机号码</p>
+								<div class="wrapper"><input type="tel" id="get_phone" placeholder= "获取手机号码" disabled="disabled"></div>
+							</div>
+							<div class="input_item">
+								<p>住房预算金额（每月/间）</p>
+								<div class="wrapper"><input type="text" id="money" placeholder= "请输入住房预算金额"></div>
+							</div>
+						</div>
+						<div class="row_box">
+							<div class="input_item">
+								<p>预计入住时间</p>
+								<div class="wrapper"><input type="text" id="time" placeholder= "请输入您预计入住时间"></div>
+							</div>
+							<div class="input_item">
+								<p>喜欢玩什么</p>
+								<div class="wrapper"><input type="text" id="play" placeholder= "为您寻找志趣相投的发烧友"></div>
+							</div>
+						</div>
+						<div class="row_box">
+							<div class="button_box">
+								<div class="button button_submit">提交</div>
+								<div class="button button_close">关闭</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 预约成功 -->
+			<div class="step" id="step_success">
+				<div class="step_inner">
+					<div class="wrapper">
+						<div class="logo_box">
+							<img src="http://okzrsonhm.bkt.clouddn.com/zhaixi2reservation_logo.png" alt="">
+						</div>
+						<div class="statu_box">
+							<img src="http://okzrsonhm.bkt.clouddn.com/zhaixi2step3.png" alt="">
+						</div>
+					</div>
+					<div class="info_box">
+						<div class="success_box">
+							<div class="img_box">
+								<img src="http://okzrsonhm.bkt.clouddn.com/zhaixi2success.png" alt="">
+							</div>
+						</div>
+						<div class="row_box">						
+							<div class="button_box">
+								<div class="note">
+									2个工作日会有内专属人员与您联系 <br> 请保持手机畅通哦
+								</div>
+
+								<div class="button button_close">关闭</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<script src="https://cdn.bootcss.com/jquery/1.12.1/jquery.min.js"></script>
+	<script>
+		function resetCode(){
+	      var hq_code = $('#hq_code');
+	      var cx_code = $('#cx_code');
+	      var phone = $('#phone').val();
+	      if (!/^1(3|4|5|7|8)\d{9}$/.test(phone)) return alert('请输入正确的手机号');
+	      cx_code.html('60(s)');
+	      hq_code.hide();
+	      cx_code.show();
+	      var second = 60;
+	      var timer = null;
+
+	      $.ajax({
+	        type: 'post',
+	        url: 'https://api.iwoyou.top/sms/send/',
+	        data: {
+	          phone: phone
+	        },
+	        dataType: 'json',
+	        success: function(data) {
+	          if (data.success) {
+	            console.log('success');
+	          } else {
+	            throw Error(data.errmsg);
+	          }
+	        }
+	      })
+
+	      timer = setInterval(function(){
+	        second -= 1;
+	        if(second >0 ){
+	          cx_code.html(+second+'(s)');
+	        }else{
+	          clearInterval(timer);
+	          hq_code.html('重新获取');
+	          hq_code.show();
+	          cx_code.hide();
+	        };
+	      },1000);
+	    }
+
+	    var step = $('.reservation_box .step');
+	    var step_info = $('#step_info');
+	    var step_all_info = $('#step_all_info');
+	    var step_success = $('#step_success');
+
+	    var submit_1 = $('#step_info .button_submit');
+	    var submit_2 = $('#step_all_info .button_submit');
+
+	    var close = $('.step .button_close');
+	    var mask = $('#mask');
+
+	    // 提交验证信息
+	    function infoSubmitHandle(){
+	    	var phone = $('#phone').val();
+	    	var code = $('#code').val();
+	    	if (!/^1(3|4|5|7|8)\d{9}$/.test(phone)) return alert('请输入正确的手机号');
+	    	if (!code) return alert('请输入验证码');
+
+			$.ajax({
+				type: 'post',
+				url: 'https://api.iwoyou.top/sms/verify',
+				data: {
+				  phone: phone,
+				  code: code
+				},
+				dataType: 'json',
+				success: function(data) {
+					if (data.success) {
+				    	step.hide().eq(1).show();
+				    	var get_phone = $('#get_phone');
+				    	get_phone.val(phone);
+					} else {
+						alert('验证码有误');
+						throw Error(data.errmsg);
+					}
+				}
+			})
+
+	    }
+	    // 提交补充材料
+	    function allinfoSubmitHandle(){
+	    	var shop = $('#home_select').val();
+	    	var name = $('#name').val();
+	    	var get_phone = $('#get_phone').val();
+	    	var money = $('#money').val();
+	    	var time = $('#time').val();
+	    	var play = $('#play').val();
+	    	if (!name) return alert('请输入您的姓名');
+	    	if (!money) return alert('请输入住房预算金额');
+	    	if (!time) return alert('请输入您预计入住时间');
+	    	if (!play) return alert('请输入您喜欢玩的');
+	    	$.ajax({
+				type: 'post',
+				url: 'https://api.iwoyou.top/zhaixi/pc/order',
+				data: {
+					shop: shop,
+					name: name,
+				    phone: get_phone,
+				    wish_price: money,
+				    checkin_time: time,
+				    interest: play
+				},
+				dataType: 'json',
+				success: function(data) {
+					if (data.success) {
+						console.log('success');
+				    	step.hide().eq(2).show();
+					} else {
+						throw Error(data.errmsg);
+					}
+				}
+			})
+	    }
+	    // 关闭
+	    function closeHandle(){
+	    	var i = $(this).parents('.step').index();
+	    	if (i == 1) {
+	    		step.hide().eq(0).show();
+	    	}else {
+	    		mask.hide();
+	    		var dialog = $(window.top.document).find('#dialog');
+	    		var bodyScroll = $(window.top.document).find('body');
+				dialog.hide();
+				bodyScroll.css('overflow','auto');
+	    	};
+	    }
+
+	    submit_1.on('click',infoSubmitHandle);
+	    submit_2.on('click',allinfoSubmitHandle);
+	    close.on('click',closeHandle);
+
+	</script>
+</body>
+</html>

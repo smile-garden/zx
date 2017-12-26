@@ -1,0 +1,209 @@
+@font-face {
+  font-family: 'MyNewFont';
+  src: url("../font/KaiGenGothicCN-Light_8dd551f.woff");
+}
+
+#dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5000;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.about_box {
+  min-width: 1280px;
+}
+
+.header {
+  width: 100%;
+}
+
+.header .banner {
+  width: 100%;
+  position: relative;
+}
+
+.header .banner img {
+  width: 100%;
+}
+
+.header .banner .banner_des {
+  width: 600px;
+  height: 120px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -40px;
+  margin-left: -300px;
+  text-align: center;
+  line-height: 120px;
+  color: #fff;
+  font-size: 36px;
+}
+
+@media screen and (min-width: 1600px) {
+  .header .banner .banner_des {
+    font-size: 52px;
+  }
+}
+
+.header .banner .banner_des span {
+  font-family: MyNewFont;
+}
+
+.header .banner .banner_des span span {
+  font-weight: 100;
+}
+
+.about_info {
+  width: 100%;
+}
+
+.about_info .about_info_inner {
+  width: 1200px;
+  padding: 34px 0;
+  margin: 0 auto;
+}
+
+.about_info .about_list {
+  width: 100%;
+}
+
+.about_info .about_list .about_item {
+  width: 100%;
+  overflow: hidden;
+}
+
+.about_info .about_list .about_item .title {
+  width: 240px;
+  float: left;
+  color: #313131;
+  padding: 64px 0;
+}
+
+.about_info .about_list .about_item .title p {
+  font-size: 36px;
+}
+
+@media screen and (min-width: 1600px) {
+  .about_info .about_list .about_item .title p {
+    font-size: 40px;
+  }
+}
+
+.about_info .about_list .about_item .title .line {
+  width: 16px;
+  height: 4px;
+  margin: 24px 0;
+  border-radius: 2px;
+}
+
+.about_info .about_list .about_item .title span {
+  font-size: 18px;
+  letter-spacing: 10px;
+}
+
+@media screen and (min-width: 1600px) {
+  .about_info .about_list .about_item .title span {
+    font-size: 24px;
+  }
+}
+
+.about_info .about_list .about_item .content {
+  width: 960px;
+  float: left;
+  padding: 64px 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.about_info .about_list .about_item .content .detail {
+  padding-left: 120px;
+  font-size: 16px;
+}
+
+.about_info .about_list .about_item .content .detail p {
+  text-indent: 36px;
+  line-height: 36px;
+  color: #313131;
+  text-align: justify;
+}
+
+.about_info .about_list .about_item .content .detail p:first-child {
+  color: #000;
+  font-weight: 600;
+}
+
+.about_info .about_list .about_item .content .message {
+  float: right;
+  text-align: right;
+  font-size: 36px;
+  line-height: 54px;
+  color: #313131;
+  font-family: MyNewFont;
+}
+
+.about_info .about_list .about_item .content .message span {
+  font-weight: 100;
+}
+
+.about_info .about_list .about_item:last-child .content {
+  border-bottom-width: 0;
+}
+
+.about_info .team_list {
+  float: right;
+}
+
+.about_info .team_list .team_item {
+  width: 246px;
+  padding-left: 100px;
+  float: left;
+  text-align: center;
+}
+
+.about_info .team_list .team_item .header {
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.about_info .team_list .team_item .header img {
+  width: 100%;
+}
+
+.about_info .team_list .team_item p {
+  font-size: 20px;
+  color: #000;
+  padding-bottom: 14px;
+}
+
+.about_info .team_list .team_item span {
+  font-size: 16px;
+  color: #313131;
+  line-height: 24px;
+}
+
+.position_box .iw_poi_title {
+  color: #CC5522;
+  font-size: 14px;
+  font-weight: bold;
+  overflow: hidden;
+  padding-right: 13px;
+  white-space: nowrap;
+}
+
+.position_box .iw_poi_content {
+  font: 12px arial, sans-serif;
+  overflow: visible;
+  padding-top: 4px;
+  white-space: -moz-pre-wrap;
+  word-wrap: break-word;
+}
+
+.position_box .BMapLabel {
+  display: none;
+  opacity: 0;
+}

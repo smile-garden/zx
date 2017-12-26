@@ -1,0 +1,220 @@
+@font-face {
+  font-family: 'MyNewFont';
+  src: url("../font/KaiGenGothicCN-Light_8dd551f.woff");
+}
+
+.header_box .banner {
+  width: 100%;
+  height: 2.6rem;
+  background: url(http://oe3sfsdmg.bkt.clouddn.com/zhaixim1about_banner.png) 0 0/100% no-repeat;
+  margin-bottom: .03rem;
+}
+
+.header_box .banner .banner_des {
+  padding-top: 1.4rem;
+  font-size: .2rem;
+  line-height: .26rem;
+  text-align: center;
+  color: #fff;
+}
+
+.header_box .banner .banner_des p {
+  font-family: MyNewFont;
+  letter-spacing: 1px;
+}
+
+.header_box .banner .banner_des span {
+  font-family: MyNewFont;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.about_info {
+  width: 100%;
+}
+
+.about_info .about_info-inner {
+  width: 100%;
+  padding: 0 .1rem;
+}
+
+.about_info .about_list {
+  width: 3.55rem;
+  margin: 0 auto;
+}
+
+.about_info .about_item {
+  width: 100%;
+  padding: .3rem .14rem;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.about_info .about_item .title {
+  width: 100%;
+  height: .53rem;
+  color: #313131;
+}
+
+.about_info .about_item .title .left {
+  float: left;
+  height: 100%;
+}
+
+.about_info .about_item .title .left p {
+  font-size: .2rem;
+  line-height: .2rem;
+  padding-bottom: .11rem;
+  font-weight: 700;
+}
+
+.about_info .about_item .title .left .line {
+  width: .08rem;
+  height: .02rem;
+  border-radius: .01rem;
+}
+
+.about_info .about_item .title .right {
+  float: right;
+  width: .28rem;
+  height: 100%;
+}
+
+.about_info .about_item .title .right span {
+  display: block;
+  width: 100%;
+  font-size: .12rem;
+  font-weight: 700;
+  font-family: MyNewFont;
+  line-height: .14rem;
+  padding-bottom: .11rem;
+  text-align: center;
+  letter-spacing: .01rem;
+}
+
+.about_info .about_item .title .right .logo {
+  width: 100%;
+}
+
+.about_info .about_item .title .right .logo img {
+  width: 100%;
+}
+
+.about_info .content {
+  width: 100%;
+}
+
+.about_info .content .detail {
+  padding-top: .3rem;
+}
+
+.about_info .content .detail p {
+  font-size: .1rem;
+  color: #999;
+  text-indent: .22rem;
+  line-height: .16rem;
+  text-align: justify;
+}
+
+.about_info .content .detail p:first-child {
+  color: #313131;
+  font-weight: 700;
+}
+
+.about_info .content .team_list {
+  width: 2.6rem;
+  padding-top: .36rem;
+  height: 1.71rem;
+  margin: 0 auto;
+}
+
+.about_info .content .team_list .team_item {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.about_info .content .team_list .team_item .header {
+  width: .7rem;
+  height: .7rem;
+  margin: 0 auto;
+}
+
+.about_info .content .team_list .team_item .header img {
+  width: 100%;
+}
+
+.about_info .content .team_list .team_item p {
+  font-size: .12rem;
+  line-height: .12rem;
+  padding: .14rem 0 .11rem;
+  text-align: center;
+  color: #000;
+}
+
+.about_info .content .team_list .team_item span {
+  display: block;
+  line-height: .14rem;
+  font-size: .1rem;
+  text-align: center;
+  color: #999;
+}
+
+.about_info .content .message {
+  font-size: .16rem;
+  padding: .3rem 0 .4rem;
+  line-height: .26rem;
+  text-align: center;
+  font-family: MyNewFont;
+  color: #484848;
+}
+
+.about_info .content .message span {
+  font-weight: 100;
+}
+
+.about_info .position_box .iw_poi_title {
+  color: #CC5522;
+  font-size: 14px;
+  font-weight: bold;
+  overflow: hidden;
+  padding-right: 13px;
+  white-space: nowrap;
+}
+
+.about_info .position_box .iw_poi_content {
+  font: 12px arial, sans-serif;
+  overflow: visible;
+  padding-top: 4px;
+  white-space: -moz-pre-wrap;
+  word-wrap: break-word;
+}
+
+.about_info .position_box .BMapLabel {
+  display: none;
+  opacity: 0;
+}
+
+.footer {
+  width: 100%;
+  height: .5rem;
+  background: url(http://oe3sfsdmg.bkt.clouddn.com/zhaixim1footer_bg.png) 0 0/100% no-repeat;
+  padding: .12rem 0;
+}
+
+.footer .footer_inner {
+  width: 100%;
+  height: 100%;
+}
+
+.footer .footer_inner p {
+  width: 100%;
+  height: .13rem;
+  font-size: .1rem;
+  color: #666;
+  text-align: center;
+  line-height: .15rem;
+}
+
+.footer .footer_inner p a {
+  color: #666;
+}

@@ -1,0 +1,440 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'MyNewFont';
+  src: url("../font/KaiGenGothicCN-Light_8dd551f.woff");
+}
+
+#dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5000;
+  display: none;
+}
+
+.zhaixi_box {
+  min-width: 1280px;
+}
+
+.header {
+  width: 100%;
+}
+
+.header .banner {
+  width: 100%;
+  position: relative;
+}
+
+.header .banner img {
+  width: 100%;
+}
+
+.header .banner .banner_des {
+  width: 600px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -40px;
+  margin-left: -300px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 50px;
+  color: #fff;
+}
+
+@media screen and (min-width: 1600px) {
+  .header .banner .banner_des {
+    height: 120px;
+    margin-top: -70px;
+    font-size: 52px;
+    line-height: 60px;
+  }
+}
+
+.header .banner .banner_des p {
+  font-family: MyNewFont;
+}
+
+.content {
+  width: 100%;
+}
+
+.content .views {
+  width: 100%;
+  overflow: hidden;
+}
+
+.content .view {
+  width: 50%;
+  float: left;
+  position: relative;
+  padding: 4px 2px 4px 0;
+}
+
+@media screen and (min-width: 1600px) {
+  .content .view {
+    padding: 8px 4px 8px 0;
+  }
+}
+
+.content .view img {
+  width: 100%;
+}
+
+.content .view:last-child {
+  padding: 4px 0 4px 2px;
+}
+
+@media screen and (min-width: 1600px) {
+  .content .view:last-child {
+    padding: 8px 0 8px 4px;
+  }
+}
+
+.content .view .des_box {
+  width: 500px;
+  height: 140px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -70px;
+  margin-left: -250px;
+  color: #fff;
+  text-align: center;
+}
+
+@media screen and (min-width: 1600px) {
+  .content .view .des_box {
+    height: 100px;
+    margin-top: -50px;
+  }
+}
+
+.content .view .des_box .title {
+  font-size: 36px;
+  line-height: 60px;
+}
+
+@media screen and (min-width: 1600px) {
+  .content .view .des_box .title {
+    font-size: 52px;
+    line-height: 80px;
+  }
+}
+
+.content .view .des_box .title span {
+  font-family: MyNewFont;
+}
+
+.content .view .des_box .title span span {
+  font-weight: 100;
+}
+
+.content .view .des_box .des {
+  font-size: 16px;
+  font-family: MyNewFont;
+  line-height: 40px;
+}
+
+@media screen and (min-width: 1600px) {
+  .content .view .des_box .des {
+    font-size: 24px;
+    line-height: 60px;
+  }
+}
+
+.content .slogan_box {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.content .slogan_box img {
+  width: 100%;
+}
+
+.content .slogan_box .slogan {
+  width: 560px;
+  height: 220px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin-left: -280px;
+}
+
+.content .slogan_box .slogan .logo {
+  width: 120px;
+  height: 160px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.content .slogan_box .slogan .logo img {
+  width: 100%;
+}
+
+.content .slogan_box .slogan .title {
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+}
+
+@media screen and (min-width: 1600px) {
+  .content .slogan_box .slogan .title {
+    font-size: 52px;
+  }
+}
+
+.content .slogan_box .slogan .title span {
+  font-family: MyNewFont;
+}
+
+.content .service_box {
+  width: 100%;
+  position: relative;
+}
+
+.content .service_box img {
+  width: 100%;
+}
+
+.content .service_box .service_inner {
+  width: 80%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 10%;
+}
+
+.content .service_box .service_inner .blank {
+  width: 100%;
+  height: 20%;
+}
+
+.content .service_box .service_inner .des {
+  width: 100%;
+  text-align: center;
+  color: #111;
+  line-height: 60px;
+  font-size: 36px;
+}
+
+@media screen and (min-width: 1600px) {
+  .content .service_box .service_inner .des {
+    font-size: 52px;
+  }
+}
+
+.content .service_box .service_inner .des span {
+  font-family: MyNewFont;
+}
+
+.content .service_box .service_inner .service {
+  width: 100%;
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+}
+
+.content .service_box .service_inner .list {
+  width: 100%;
+}
+
+.content .service_box .service_inner .list .item {
+  width: 16.66666666666666%;
+  float: left;
+}
+
+.content .service_box .service_inner .list .item .img_box {
+  width: 120px;
+  height: 152px;
+  padding-bottom: 32px;
+  margin: 0 auto;
+}
+
+.content .service_box .service_inner .list .item .img_box img {
+  width: 100%;
+}
+
+.content .service_box .service_inner .list .item span {
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+}
+
+.content .service_box .service_inner .list.service_active li:nth-child(1) .img_box {
+  -webkit-animation: bounceInDown 0.8s 0.1s ease both;
+  -moz-animation: bounceInDown 0.8s 0.1s ease both;
+}
+
+.content .service_box .service_inner .list.service_active li:nth-child(2) .img_box {
+  -webkit-animation: bounceInDown 0.8s 0.2s ease both;
+  -moz-animation: bounceInDown 0.8s 0.2s ease both;
+}
+
+.content .service_box .service_inner .list.service_active li:nth-child(3) .img_box {
+  -webkit-animation: bounceInDown 0.8s 0.3s ease both;
+  -moz-animation: bounceInDown 0.8s 0.3s ease both;
+}
+
+.content .service_box .service_inner .list.service_active li:nth-child(4) .img_box {
+  -webkit-animation: bounceInDown 0.8s 0.4s ease both;
+  -moz-animation: bounceInDown 0.8s 0.4s ease both;
+}
+
+.content .service_box .service_inner .list.service_active li:nth-child(5) .img_box {
+  -webkit-animation: bounceInDown 0.8s 0.5s ease both;
+  -moz-animation: bounceInDown 0.8s 0.5s ease both;
+}
+
+.content .service_box .service_inner .list.service_active li:nth-child(6) .img_box {
+  -webkit-animation: bounceInDown 0.8s 0.6s ease both;
+  -moz-animation: bounceInDown 0.8s 0.6s ease both;
+}
+
+.content .facility_box {
+  width: 100%;
+  position: relative;
+}
+
+.content .facility_box img {
+  width: 100%;
+}
+
+.content .facility_box .facility_inner {
+  width: 70%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 15%;
+}
+
+.content .facility_box .facility_inner .blank {
+  width: 100%;
+  height: 20%;
+}
+
+.content .facility_box .facility_inner .des {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  line-height: 60px;
+  font-size: 36px;
+}
+
+@media screen and (min-width: 1600px) {
+  .content .facility_box .facility_inner .des {
+    font-size: 52px;
+  }
+}
+
+.content .facility_box .facility_inner .des span {
+  font-family: MyNewFont;
+}
+
+.content .facility_box .facility_inner .facility {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  width: 100%;
+}
+
+.content .facility_box .facility_inner .list {
+  width: 100%;
+}
+
+.content .facility_box .facility_inner .list .item {
+  width: 20%;
+  float: left;
+}
+
+.content .facility_box .facility_inner .list .item .img_box {
+  width: 120px;
+  height: 152px;
+  padding-bottom: 32px;
+  margin: 0 auto;
+}
+
+.content .facility_box .facility_inner .list .item .img_box img {
+  width: 100%;
+}
+
+.content .facility_box .facility_inner .list .item span {
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  color: #7E7D80;
+  text-align: center;
+}
+
+.content .facility_box .facility_inner .list.facility_active li:nth-child(1) .img_box {
+  -webkit-animation: bounceInDown 0.8s 0.1s ease both;
+  -moz-animation: bounceInDown 0.8s 0.1s ease both;
+}
+
+.content .facility_box .facility_inner .list.facility_active li:nth-child(2) .img_box {
+  -webkit-animation: bounceInDown 0.8s 0.2s ease both;
+  -moz-animation: bounceInDown 0.8s 0.2s ease both;
+}
+
+.content .facility_box .facility_inner .list.facility_active li:nth-child(3) .img_box {
+  -webkit-animation: bounceInDown 0.8s 0.3s ease both;
+  -moz-animation: bounceInDown 0.8s 0.3s ease both;
+}
+
+.content .facility_box .facility_inner .list.facility_active li:nth-child(4) .img_box {
+  -webkit-animation: bounceInDown 0.8s 0.4s ease both;
+  -moz-animation: bounceInDown 0.8s 0.4s ease both;
+}
+
+.content .facility_box .facility_inner .list.facility_active li:nth-child(5) .img_box {
+  -webkit-animation: bounceInDown 0.8s 0.5s ease both;
+  -moz-animation: bounceInDown 0.8s 0.5s ease both;
+}
+
+/*动画*/
+.animation {
+  -webkit-animation: bounceInDown 1s .2s ease both;
+  -moz-animation: bounceInDown 1s .2s ease both;
+}
+
+@-webkit-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-2000px);
+  }
+  60% {
+    opacity: 1;
+    -moz-transform: translateY(30px);
+  }
+  80% {
+    -moz-transform: translateY(-10px);
+  }
+  100% {
+    -moz-transform: translateY(0);
+  }
+}

@@ -1,0 +1,305 @@
+@font-face {
+  font-family: 'MyNewFont';
+  src: url("../font/KaiGenGothicCN-Light_8dd551f.woff");
+}
+
+.header_box .banner {
+  width: 100%;
+}
+
+.header_box .banner #swiper1 {
+  width: 100%;
+}
+
+.header_box .banner #swiper1.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 0rem;
+}
+
+.header_box .banner #swiper1 .swiper-pagination-bullet {
+  width: .3rem;
+  height: .02rem;
+  border-radius: .02rem;
+  background: #fff;
+  opacity: .4;
+}
+
+.header_box .banner #swiper1 .swiper-pagination-bullet-active {
+  background: #fff;
+  opacity: 1;
+}
+
+.header_box .banner .swiper-wrapper {
+  width: 100%;
+}
+
+.header_box .banner .swiper-wrapper .swiper-slide {
+  width: 100%;
+}
+
+.header_box .banner .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+}
+
+.culture {
+  width: 3.75rem;
+  height: 2.3rem;
+  margin: 0 auto;
+  background: #fff;
+  padding: .25rem .15rem;
+}
+
+.culture .culture_inner {
+  width: 100%;
+  height: 100%;
+}
+
+.culture .culture_inner .item {
+  width: 50%;
+  height: 50%;
+  float: left;
+}
+
+.culture .culture_inner .item.item_1 {
+  border-right: 1px dotted #999;
+  padding-left: .2875rem;
+  padding-top: .12rem;
+}
+
+.culture .culture_inner .item.item_2 {
+  padding-left: .4375rem;
+  padding-top: .12rem;
+}
+
+.culture .culture_inner .item.item_3 {
+  border-right: 1px dotted #999;
+  border-top: 1px dotted #999;
+  padding-left: .2875rem;
+  padding-top: .33rem;
+}
+
+.culture .culture_inner .item.item_4 {
+  border-top: 1px dotted #999;
+  padding-left: .4375rem;
+  padding-top: .33rem;
+}
+
+.culture .culture_inner .item:nth-of-type(1) .word {
+  background-position: 0 0rem;
+}
+
+.culture .culture_inner .item:nth-of-type(2) .word {
+  background-position: 0 -0.25rem;
+}
+
+.culture .culture_inner .item:nth-of-type(3) .word {
+  background-position: 0 -0.5rem;
+}
+
+.culture .culture_inner .item:nth-of-type(4) .word {
+  background-position: 0 -0.75rem;
+}
+
+.culture .culture_inner .culture_info {
+  width: 1rem;
+  height: .45rem;
+}
+
+.culture .culture_inner .culture_info .word {
+  width: 100%;
+  height: .25rem;
+  font-size: .22rem;
+  padding-left: .47rem;
+  font-family: MyNewFont;
+  line-height: .25rem;
+  color: #111;
+  background-image: url(http://oe3sfsdmg.bkt.clouddn.com/zhaixim1icons.png);
+  background-repeat: no-repeat;
+  background-size: .25rem auto;
+}
+
+.culture .culture_inner .culture_info span {
+  display: block;
+  font-size: .1rem;
+  line-height: .12rem;
+  padding-top: .08rem;
+  color: #313131;
+}
+
+.show_apartment {
+  width: 100%;
+}
+
+.show_apartment .swiper-container {
+  width: 100%;
+}
+
+.show_apartment .swiper-container.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 0rem;
+}
+
+.show_apartment .swiper-container .swiper-pagination-bullet {
+  width: .3rem;
+  height: .02rem;
+  border-radius: .02rem;
+  background: #fff;
+  opacity: .4;
+}
+
+.show_apartment .swiper-container .swiper-pagination-bullet-active {
+  background: #fff;
+  opacity: 1;
+}
+
+.show_apartment .swiper-wrapper {
+  width: 100%;
+}
+
+.show_apartment .swiper-wrapper .swiper-slide {
+  width: 100%;
+}
+
+.show_apartment .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
+
+.userInfo {
+  width: 100%;
+  height: 1.6rem;
+  padding: .3rem 0 .3rem .45rem;
+  background: url(http://oe3sfsdmg.bkt.clouddn.com/zhaixim1userInfo.png) center center/cover no-repeat;
+}
+
+.userInfo .userInfo_box {
+  width: 100%;
+  height: 100%;
+}
+
+.userInfo .userInfo_box .userInfo_slogan {
+  width: 100%;
+  font-size: .2rem;
+  color: #000;
+  font-family: MyNewFont;
+  line-height: .25rem;
+  padding-bottom: .16rem;
+}
+
+.userInfo .userInfo_box .userInfo_more {
+  width: .85rem;
+  height: .3rem;
+  display: block;
+  background: #404040;
+  line-height: .3rem;
+  text-align: center;
+  font-size: .12rem;
+  color: #fff;
+}
+
+.learn_more {
+  width: 100%;
+  height: 2.6rem;
+  background: url(http://oe3sfsdmg.bkt.clouddn.com/zhaixim1learn_more.png) center center/cover no-repeat;
+  padding: .65rem 0 .6rem 0;
+}
+
+.learn_more .slogan_box {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.learn_more .slogan_box .slogan_en {
+  font-size: .26rem;
+  line-height: .45rem;
+  text-align: center;
+}
+
+.learn_more .slogan_box .slogan_ch {
+  font-size: .2rem;
+  font-family: MyNewFont;
+  line-height: .2rem;
+  padding-bottom: .4rem;
+  text-align: center;
+}
+
+.learn_more .slogan_box .more {
+  width: .85rem;
+  height: .3rem;
+  display: block;
+  font-size: .12rem;
+  color: #111;
+  text-align: center;
+  line-height: .3rem;
+  background: #fff;
+  margin: 0 auto;
+}
+
+.cooperation {
+  width: 100%;
+  height: 1.6rem;
+  padding: .3rem 0;
+  background: url(http://oe3sfsdmg.bkt.clouddn.com/zhaixim1cooperation.png) center center/cover no-repeat;
+}
+
+.cooperation .bus_box {
+  width: 100%;
+  height: 100%;
+}
+
+.cooperation .bus_box .bus_en {
+  font-size: .2rem;
+  color: #fff;
+  text-align: center;
+  line-height: .22rem;
+}
+
+.cooperation .bus_box .line {
+  width: .2rem;
+  height: .26rem;
+  padding: .12rem 0;
+  margin: 0 auto;
+}
+
+.cooperation .bus_box .line img {
+  width: 100%;
+}
+
+.cooperation .bus_box .bus_affairs {
+  width: .85rem;
+  height: .3rem;
+  display: block;
+  margin: 0 auto;
+  line-height: .28rem;
+  text-align: center;
+  font-size: .12rem;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.footer {
+  width: 100%;
+  height: .5rem;
+  background: url(http://oe3sfsdmg.bkt.clouddn.com/zhaixim1footer_bg.png) center center/cover no-repeat;
+  padding: .12rem 0;
+}
+
+.footer .footer_inner {
+  width: 100%;
+  height: 100%;
+}
+
+.footer .footer_inner p {
+  width: 100%;
+  height: .13rem;
+  font-size: .1rem;
+  color: #666;
+  text-align: center;
+  line-height: .15rem;
+}
+
+.footer .footer_inner p a {
+  color: #666;
+}
